@@ -1,0 +1,497 @@
+<html>
+  <head>
+    <title>About</title>
+    <!--Olympic Icon-->
+    <link rel="icon"href="MainImages/Icon.png"type ="image/x-icon">
+    <!--Linking to CSS-->
+    <link rel="stylesheet" href="about.css">
+    <!--Meta Tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Linking to icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!--Linking to fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <!--Linking to Java Script-->
+    <script src="popup.js"></script>
+  </head>
+                    
+  <body>
+    <!--Navigation Bar-->
+    <section id="Top">
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+      <div id="Navbar">
+        <nav>
+          <a class="links" href="index.html"><img id="logo" src="MainImages/Logo.png"> </a> 
+          <div class="center">
+            <a class="links hover" href="index.html">Home</a> 
+            <a class="Partition"><font size="5">|</a> 
+            <a class="links cpage" href="about.html">About</a> 
+            <a class="Partition"><font size="5">|</a> 
+            <a class="links hover" href="athletes.html">Athletes</a> 
+            <a class="Partition"><font size="5">|</a> 
+            <a class="links hover" href="medal.html">Medal Tracker</a> 
+            <a class="Partition"><font size="5">|</a> 
+            <a class="links hover" href="sports.html">Sports & Events</a>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!--Modals-->
+    <div class="modalborder" id="modalborder"></div>
+    <div id="cards">
+      <!--Modal 1-->
+      <div class="modal" id="Venue1">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Yves-Du-Marnoir Stadium</div>
+          </div>
+          <div class="modal-body">
+            <p>Yves-du-Manoir Stadium hosted rugby sevens, track and field and other sports during the 2024 Paris Olympics. Its versatility and historical significance made it a key venue for the Games. </p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue1)" class="close-button">&times;</button>
+          <img src="Venues/Yves-Du-Manoir Stadium.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 2-->
+      <div class="modal" id="Venue2">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Paris la Défense Arena - Nanterre </div>
+          </div>
+          <div class="modal-body">
+            <p>Paris La Défense Arena is a modern arena in Nanterre, France. It hosted basketball, handball, and gymnastics during the 2024 Summer Olympics.</p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue2)" class="close-button">&times;</button>
+            <img src="Venues/Paris la Défense Arena.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 3-->
+      <div class="modal" id="Venue3">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Roland Garros Stadium</div>
+          </div>
+          <div class="modal-body">
+            <p>Roland Garros Stadium hosted the tennis events. Its clay courts, which are unique to the French Open, provided a challenging and exciting playing surface for the world's best tennis players. </p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue3)" class="close-button">&times;</button>
+          <img src="Venues/Roland Garros Stadium.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 4-->
+      <div class="modal" id="Venue4">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Porte de Versailles</div>
+          </div>
+          <div class="modal-body">
+            <p>Porte de Versailles is a large exhibition center in Paris. It hosted table tennis, weightlifting, and taekwondo during the 2024 Summer Olympics. </p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue4)" class="close-button">&times;</button>
+          <img src="Venues/Porte de Versailles.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 5-->
+      <div class="modal" id="Venue5">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Accor Arena</div>
+          </div>
+          <div class="modal-body">
+            <p>Accor Arena hosted the boxing events. Its spacious interior and state-of-the-art facilities provided a suitable environment for the intense competition. </p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue5)" class="close-button">&times;</button>
+          <img src="Venues/Accor Arena Paris.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 6-->
+      <div class="modal" id="Venue6">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Chateau de Versailles</div>
+          </div>
+          <div class="modal-body">
+            <p>Chateau de Versailles hosted the equestrian events. The palace's grand grounds and historical significance provided a unique and memorable setting for these prestigious competitions. </p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue6)" class="close-button">&times;</button>
+          <img src="Venues/Chateau de Versailles.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 7-->
+      <div class="modal" id="Venue7">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">La Concorde</div>
+          </div>
+          <div class="modal-body">
+            <p>La Concorde is used to play Basketball, Skateboarding and BMX freestyle in this olympics.</p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue7)" class="close-button">&times;</button>
+          <img src="Venues/La Concorde.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 8-->
+      <div class="modal" id="Venue8">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Champs De Mars</div>
+          </div>
+          <div class="modal-body">
+            <p>Champs de Mars Arena (also known as Grand Palais Éphémère) is a temporary exhibition hall in the Champ de Mars, a large public greenspace in Paris. This stadium was also used to hold 9000 people. </p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue8)" class="close-button">&times;</button>
+          <img src="Venues/Champs De Mars.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 9-->
+      <div class="modal" id="Venue9">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Marseille</div>
+          </div>
+          <div class="modal-body">
+            <p>Marseille hosted the sailing events for the Olympics. The city's coastal location and favorable wind conditions made it an ideal venue for this sport. The sailing competitions took place in the Mediterranean Sea off the coast of Marseille. </p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue9)" class="close-button">&times;</button>
+          <img src="Venues/Marseille.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 10-->
+      <div class="modal" id="Venue10">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Arc de Triomphe</div>
+          </div>
+          <div class="modal-body">
+            <p>Arc de Triomphe was used as a closing cerimony and gave respect to all the fallen french soldior and congradulated the atheletes that participated and won.</p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue10)" class="close-button">&times;</button>
+          <img src="Venues/Arc de Triomphe.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 11-->
+      <div class="modal" id="Venue11">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Aquatic Centre</div>
+          </div>
+          <div class="modal-body">
+            <p>The Aquatic Centre in Paris was specifically built to host swimming and diving events during the 2024 Summer Olympics. It was a temporary structure that was dismantled after the Games concluded. </p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue11)" class="close-button">&times;</button>
+          <img src="Venues/Aquatic Centre Paris.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 12-->
+      <div class="modal" id="Venue12">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Chapelle Arena</div>
+          </div>
+          <div class="modal-body">
+            <p>Porte de la Chapelle Arena is a multi-purpose indoor arena located in Paris, France. In the olympics basketball and handball matches were hosted in the stadium.</p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue12)" class="close-button">&times;</button>
+          <img src="Venues/Chapelle Arena.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 13-->
+      <div class="modal" id="Venue13">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Le Bourget</div>
+          </div>
+          <div class="modal-body">
+            <p>Le Bourget is a suburb of Paris with a major airport. It likely played a supporting role in the 2024 Summer Olympics, such as transporting athletes or officials.</p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue13)" class="close-button">&times;</button>
+          <img src="Venues/Le Bourget.jpg" class="modal-Image">
+        </div>
+      </div>
+      <!--Modal 14-->
+      <div class="modal" id="Venue14">
+        <div class="content">
+          <div class="modal-header">
+            <div class="title">Arena Paris Nord</div>
+          </div>
+          <div class="modal-body">
+            <p>Arena Paris Nord is a multi-purpose indoor arena located in Villepinte, France. It's one of the largest arenas in Europe, with a capacity of around 17,000 spectators. In the olympics this was used as an area to train atheletes for the olympics. </p>
+          </div>
+        </div>
+        <div class="modal-image">
+          <button onclick="closeModal(Venue14)" class="close-button">&times;</button>
+          <img src="Venues/Arena Paris Nord.jpg" class="modal-Image">
+        </div>
+      </div>
+    </div>
+
+    <!--Banner-->
+    <div class="image-container">
+      <div class="text">ABOUT</div>
+    </div>
+
+    <!--Information about the olympics and Paris-->
+    <center>
+    <section id='information'>
+      <div class="grid-container">
+        <div class="contentcard fullscreen">
+          <div class="card-content">
+            <h3>About the</h3>
+              <h1>Olympics</h1>
+                <p>The Olympics are a big sports competition that happens every four years. <br>
+                  Athletes from all over the world come together to compete in different sports like swimming, 
+                  running, gymnastics, and more. <br>
+                  It's like a big sports festival where everyone cheers for their favorite 
+                  athletes and countries. There are two kinds of Olympics: Summer Olympics and Winter Olympics.<br>
+                </p>
+                <p class="hide">The Summer Olympics have sports like swimming, running, and basketball, while the Winter 
+                  Olympics have sports like skiing, ice skating, and snowboarding.<br>
+                  That means the biggest sports competition in the world will be happening in Paris, France. <br>
+                  People from all over the world will come to watch athletes compete in different sports. 
+                </p>
+                <br>
+                <h3>The Destination</h3>
+                <h1>Paris</h1>
+                <p>Paris is a beautiful city in France, known for its iconic landmarks like the Eiffel Tower and the Louvre Museum.<br>
+                  It's a popular tourist destination with its charming streets, historic architecture, and vibrant culture.<br>
+                  Paris is also a major center for fashion, art, and cuisine.
+                </p>
+          </div>
+        </div>
+        <br>
+        <!--Map of the Venues-->
+        <div class="contentcard fullscreen">
+          <div class="card-content">
+            <h3>The Map of</h3>
+            <h1>Venues</h1>
+            <div class="map">
+              <img class="paris_map" src="MainImages/Paris.png">
+              <!--Btns for the venues-->
+              <div class="venuebtns">
+                <button id="btn1" class="button" onclick="openModal(Venue1)"></button>
+                <button id="btn2" class="button" onclick="openModal(Venue2)"></button>
+                <button id="btn3" class="button" onclick="openModal(Venue3)"></button>
+                <button id="btn4" class="button" onclick="openModal(Venue4)"></button>
+                <button id="btn5" class="button" onclick="openModal(Venue5)"></button>
+                <button id="btn6" class="button" onclick="openModal(Venue6)"></button>
+                <button id="btn7" class="button" onclick="openModal(Venue7)"></button>
+                <button id="btn8" class="button" onclick="openModal(Venue8)"></button>
+                <button id="btn9" class="button" onclick="openModal(Venue9)"></button>
+                <button id="btn10" class="button" onclick="openModal(Venue10)"></button>
+                <button id="btn11" class="button" onclick="openModal(Venue11)"></button>
+                <button id="btn12" class="button" onclick="openModal(Venue12)"></button>
+                <button id="btn13" class="button" onclick="openModal(Venue13)"></button>
+                <button id="btn14" class="button" onclick="openModal(Venue14)"></button>
+              </div>
+            </div>
+            <p>Click on the buttons to check out the Venues for the 2024 Paris Olympics</p>
+          </div>
+        </div>
+        <br><br>
+      </div>
+    </section>
+    </center>
+
+    <!--Funfacts-->
+      <section id="facts">
+            <div class="Funfacts">
+              <!--Card 1-->
+              <div class="ffcard" id="card1" onclick="flip('card1')">
+                <div class="screen front">
+                  <div class="screen-image"></div>
+                  <div class="screen-overlay"></div>
+                  <div class="screen-content">
+                    <span class="material-symbols-outlined screen-icon">
+                      lightbulb
+                    </span>
+                    <div class="screen-user">
+                      <span class="title">Pakistan</span>
+                      <span class="name" data-value="Hero">hero</span>
+                      <a class="link" href="https://olympics.com/en/news/pakistan-celebrate-arshad-nadeem-olympic-gold-paris-2024" target="_blank">@More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="screen back">
+                  <div class="screen-image"></div>
+                  <div class="screen-overlay"></div>
+                  <div class="screen-content">
+                    <span class="material-symbols-outlined screen-icon">
+                      lightbulb
+                    </span>
+                    <div class="screen-user">
+                      <span class="name">Pakistan winning their first medal in 34 years by Arshaad Nadeem.The country was very proud after this amazing moment</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card 2-->
+              <div class="ffcard" id="card2" onclick="flip('card2')">
+                <div class="screen front">
+                  <div class="screen-image"></div>
+                  <div class="screen-overlay"></div>
+                  <div class="screen-content">
+                    <span class="material-symbols-outlined screen-icon">
+                      lightbulb
+                    </span>
+                    <div class="screen-user">
+                      <span class="title">Casual</span>
+                      <span class="name" data-value="shooting">Shooting</span>
+                      <a class="link" href="https://economictimes.indiatimes.com/news/international/world-news/yusuf-dikec-has-more-style-his-both-eyes-open-shooting-technique-even-stuns-olympics-referees/articleshow/112211244.cms?from=mdr" target="_blank">@More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="screen back">
+                  <div class="screen-image"></div>
+                  <div class="screen-overlay"></div>
+                    <div class="screen-content">
+                      <span class="material-symbols-outlined screen-icon">
+                        lightbulb
+                      </span>
+                      <div class="screen-user">
+                        <span class="name">Turkish shooter Yusuf Dikec went viral for winning a silver medal without any specialized gear, casually competing with just his natural shooting skills.</span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <!--Card 3-->
+              <div class="ffcard" id="card3" onclick="flip('card3')">
+                <div class="screen front">
+                  <div class="screen-image"></div>
+                  <div class="screen-overlay"></div>
+                    <div class="screen-content">
+                      <span class="material-symbols-outlined screen-icon">
+                        lightbulb
+                      </span>
+                      <div class="screen-user">
+                        <span class="title" data-value="Hero">Therapy Dog</span>
+                        <span class="name" data-value="Beacon">Beacon</span>
+                        <a class="link" href="https://www.vogue.com/article/olympic-pet-therapy" target="_blank">@More Info</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="screen back">
+                  <div class="screen-image"></div>
+                  <div class="screen-overlay"></div>
+                  <div class="screen-content">
+                    <span class="material-symbols-outlined screen-icon">
+                      lightbulb
+                    </span>
+                    <div class="screen-user">
+                      <span class="name">The U.S. gymnastics team had a therapy dog named Beacon who became the most popular member of the team.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Card 4-->
+              <div class="ffcard" id="card4" onclick="flip('card4')">
+                <div class="screen front">
+                  <div class="screen-image"></div>
+                  <div class="screen-overlay"></div>
+                  <div class="screen-content">
+                    <span class="material-symbols-outlined screen-icon">
+                      lightbulb
+                    </span>
+                    <div class="screen-user">
+                      <span class="title" data-value="Hero">Disqualified</span>
+                      <span class="name" data-value="Athelete">Athelete</span>
+                      <a class="link" href="https://olympics.com/en/news/paris-2024-olympics-india-wrestling-vinesh-phogat-semi-final-result" target="_blank">@More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="screen back">
+                  <div class="screen-image"></div>
+                  <div class="screen-overlay"></div>
+                  <div class="screen-content">
+                    <span class="material-symbols-outlined screen-icon">
+                      lightbulb
+                    </span>
+                    <div class="screen-user">
+                      <span class="name">Vinesh Phogat, renowned Indian wrestler. While she didn't win a medal and got disqualified in the final, she remains a respected figure in Indian sports and an inspiration for young women.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!--hr-->
+        <section id="partition">
+          <hr style="height:2px;border-width:0;color:rgb(196, 196, 196);background-color:rgb(196, 196, 196);margin: 1rem;margin-left: 3rem;margin-right: 3rem;">
+        </section>
+
+        <!--Articles-->
+        <center>
+          <h1 style="text-align: center; color:white; font-family:Arial BLACK;">ARTICLES</h1>
+          <div class="websites" style="margin-left: 3rem; margin-right: 3rem;">
+            <!--Article 1-->
+            <div class="neon-button" style="text-decoration: none;">
+              <a class="article" href="https://olympics.com/ioc/news/ioc-awards-olympic-cup-to-the-people-of-france-at-spectacular-ceremony-on-the-champs-elysees" target="_blank">
+                <p>The people of France being awarded the Olympic cup!</p>
+              </a>
+            </div>
+            <!--Article 2-->
+            <div class="neon-button" style="text-decoration: none;">
+              <a class="article" href="https://olympics.com/ioc/news/paris-2024-over-24-000-media-accreditations-validated-at-the-olympic-games" target="_blank">
+                <p>Over 24000 media posts being validated at the games.</p>
+              </a>
+            </div>
+            <!--Article 3-->
+            <div class="neon-button" style="text-decoration: none;">
+              <a class="article" href="https://olympics.com/ioc/news/olympic-order-awarded-to-french-president-emmanuel-macron" target="_blank">
+                <p>Emmanual Macron being presented the Olympics.</p>
+              </a>
+            </div>
+            <!--Article 4-->
+            <div class="neon-button" style="text-decoration: none;">
+              <a class="article" href="https://olympics.com/en/news/2024-international-day-peace-memorable-olympic-moments" target="_blank">
+                <p>Sports moving into international peace.</p>
+              </a>
+            </div>
+            <!--Article 5-->
+            <div class="neon-button" style="text-decoration: none;">
+              <a class="article" href="https://olympics.com/ioc/news/creating-a-culture-of-peace-how-athletes-demonstrated-the-unifying-power-of-sport-during-paris-2024" target="_blank">
+                <p>Athletes unifying the power of sports!</p>
+              </a>
+            </div>
+          </div>
+        </center>
+        <!--Linking to Java Script-->
+        <script src="scramble.js"></script>
+        <script src="Button.js"></script>
+        <!--Footer-->
+        <div class="footer">
+            <p>&copy; 2024 Olympics. All rights reserved.</p>
+        </div>
+    </body>
+</html>

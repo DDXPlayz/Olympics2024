@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>Athletes</title>
+        <link rel="icon"href="MainImages/Icon.png"type ="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="athletes.css">
+        </head>
+        <body>
+            <!--Navigation Bar-->
+            <section id="Top">
+                <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+            <div id="Navbar">
+            <nav>
+                <a class="links" href="index.html"><img id=logo src="MainImages/Logo.png"> </a> 
+                <div class="center">
+                    <a class="links hover" href="index.html">Home</a> 
+                    <a class="Partition"><font size="5">|</a> 
+                    <a class="links hover" href="about.html">About</a> 
+                    <a class="Partition"><font size="5">|</a> 
+                    <a class="links cpage" href="athletes.html">Athletes</a> 
+                    <a class="Partition"><font size="5">|</a> 
+                    <a class="links hover" href="medal.html">Medal Tracker</a> 
+                    <a class="Partition"><font size="5">|</a> 
+                    <a class="links hover" href="sports.html">Sports & Events</a>
+                </div>
+            </nav>
+        </div>
+        <section id="track">
+            <div id="athleteTrack">
+                <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+                    <!--Card 1-->
+                    <div class="image-holder">
+                        <img id="zoomImage" onclick="zoom('zoomImage', 'text')" src="AtheleteCards/Athelete- Leon Marchand (France).jpg" class="trackimage" draggable="false">
+                        <div id="text" class="text-overlay">
+                            Leon Marchand (France)
+                            <div class="text-description">Swimming - 4 Gold, 1 Bronze</div>
+                        </div>
+                    </div>
+                    
+                    <!--Card 2-->
+                    <div class="image-holder">
+                        <img id="zoomImage1" onclick="zoom('zoomImage1', 'text1')" src="AtheleteCards/Athelete- Caeleb Dressel (USA).jpg" class="trackimage" draggable="false">
+                        <div id="text1" class="text-overlay">
+                            Caeleb Dressel (USA)
+                            <div class="text-description">Swimming - 4 Gold</div>
+                        </div>
+                    </div>
+                
+                    <!--Card 3-->
+                    <div class="image-holder">
+                        <img id="zoomImage2" onclick="zoom('zoomImage2', 'text2')" src="AtheleteCards/Athelete- Katie Ledecy (USA).jpg" class="trackimage" draggable="false">
+                        <div id="text2" class="text-overlay">
+                            Katie Ledecky (USA) 
+                            <div class="text-description">Swimming - 3 Gold, 1 Silver</div>
+                        </div>
+                    </div>
+                
+                    <!--Card 4-->
+                    <div class="image-holder">
+                        <img id="zoomImage3" onclick="zoom('zoomImage3', 'text3')" src="AtheleteCards/Athelete- Sydney McLaughlin (USA).jpg" class="trackimage" draggable="false">
+                        <div id="text3" class="text-overlay">
+                            Sydney McLaughlin (USA)
+                            <div class="text-description">Athletics - 2 Gold, 1 Silver</div>
+                        </div>
+                    </div>
+                
+                    <!--Card 4-->
+                    <div class="image-holder">
+                        <img id="zoomImage4" onclick="zoom('zoomImage4', 'text4')" src="AtheleteCards/Athelete- Yulimar Rojas (Venezuela).jpg" class="trackimage" draggable="false">
+                        <div id="text4" class="text-overlay">
+                            Yulimar Rojas (Venezuela)
+                            <div class="text-description">Athletics - 1 Gold, 1 Silver</div>
+                        </div>
+                    </div>
+                
+                    <!--Card 5-->
+                    <div class="image-holder">
+                        <img id="zoomImage5" onclick="zoom('zoomImage5', 'text5')" src="AtheleteCards/Athelete- Armand Duplantis (Sweden).avif" class="trackimage" draggable="false">
+                        <div id="text5" class="text-overlay">
+                            Armand Duplantis (Sweden)
+                            <div class="text-description">Athletics - 1 Gold</div>
+                        </div>
+                    </div>
+                
+                    <!--Card 6-->
+                    <div class="image-holder">
+                        <img id="zoomImage6" onclick="zoom('zoomImage6', 'text6')" src="AtheleteCards/Athelete- Simone Biles (USA).jpg" class="trackimage" draggable="false">
+                        <div id="text6" class="text-overlay">
+                            Simone Biles (USA)
+                            <div class="text-description">Gymnastics - 1 Gold, 3 Silver </div>
+                        </div>
+                    </div>
+                
+                    <!--Card 7-->
+                    <div class="image-holder">
+                        <img id="zoomImage7" onclick="zoom('zoomImage7', 'text7')" src="AtheleteCards/Athelete- Sunisa Lee (USA).jpg" class="trackimage" draggable="false">
+                        <div id="text7" class="text-overlay">
+                            Sunisa Lee (USA)
+                            <div class="text-description">Gymnastics - 1 Gold, 2 Silver</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!--JS-->
+        <script src="athlete_track.js"></script>
+                
+        <!--Footer-->
+        <div class="footer">
+            <p>&copy; 2024 Olympics. All rights reserved.</p>
+        </div>
+    </body>
+</html>

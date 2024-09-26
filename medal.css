@@ -1,0 +1,355 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(20, 20, 20);
+  overflow: hidden;
+}
+
+#Navbar {
+  width: 100vw;
+  top: 0cm;
+  left: 0ch;
+  background-color: black;
+  color: aliceblue;
+  padding: 0px;
+  font-family: "Heebo", sans-serif;
+  font-weight: 600;
+  position: fixed;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  height: 115px;
+  z-index: 99;
+}
+
+.links {
+  float:  left;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 13%;
+  text-align: center;
+  transition: transform .2s;
+}
+
+.partition {
+  float:  left;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 1%;
+  text-align: center;
+}
+
+.hover:hover {
+  color: gold;
+  text-decoration: none;
+  transform: scale(1.2); 
+}
+
+.footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  position: fixed;
+  font-size: 17px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 -12px 12px rgba(0, 0, 0, 0.3);
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 7.7%;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#000000;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 100px;
+  border-color: gold;
+  border-width: 5px;
+  box-shadow: -6px -6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform .2s;
+}
+
+#myBtn:hover {
+  color: gold;
+  transform: scale(1.2); 
+}
+
+.cpage {
+  color: rgb(109, 109, 109);
+}
+
+#logo {
+  width: 85px;
+  height: 95px;
+  border-radius: 100%;
+}
+
+.center {
+  padding: 40px 0;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+
+.globecontainer {
+  position: absolute;
+  top: 22.5%;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.0);
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.0);
+  border-radius: 30%;
+  transition: transform 1s ease-in-out;
+}
+
+.globefiltercontainer {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+  height: auto;
+  transition: all 1s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.0);
+  padding: 10px;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.slideout {
+  transform: translateY(10vh); 
+}
+
+.slideIn {
+  transform: translateX(-33vw); 
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+  background-position: 0% 100%;
+  transition: background-position 0.5s;
+}
+
+.navbar:hover {
+  background-position: 100% 100%;
+}
+
+.navbar button {
+  color: #aaa; /* neutral text color */
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.navbar button:hover {
+  color: #fff; 
+  transform: scale(1.1);
+}
+
+.button.active {
+  color: #666; 
+  text-shadow: 0 0 10px #aaa;
+}
+
+.modal {
+  position: fixed;
+  top: 44.5%;
+  left: 65%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: rgb(20, 20, 20);
+  width: 60%;
+  height: fit-content;
+  padding-bottom: 5%;
+  max-width: 80%;
+  display: flex;  
+  flex-direction: row; 
+  cursor: pointer;
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: medium;
+  transition: transform 1.4s;
+}
+
+.modalborder{
+  position: fixed;
+  width: 60%;
+  height: 48%;
+  padding-bottom: 5%;
+  z-index: 9;
+  transform: translate(-50%, -50%) scale(0);
+  top: 44.5%;
+  left: 65%;
+  transition: 200ms ease-in-out;
+  transition: transform 1.4s;
+}
+
+.modalborder::after, .modalborder::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 10px;
+  animation: 3s spin linear infinite;
+}
+.modalborder::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+@keyframes spin{
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+  }
+}
+
+@property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+  }
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 90;
+}
+
+.modalborder.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: rgb(199, 199, 199);
+  transition: transform .2s;
+  margin: 10px;
+  align-self: last baseline;
+}
+
+.close-button:hover {
+  transform: scale(1.5);
+  color: rgb(163, 0, 0);
+}
+
+.modal-body {
+  padding: 10px 15px;
+  flex: 1; 
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.progressbars {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+}
+
+.progress-bar {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 30px;
+  width: 500px;
+}
+
+.progress {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 20px;
+  width: 0;
+  transition: width 2s; 
+}
+
+.graphprogress {
+  animation: load 3s normal forwards;
+  width:50%;
+  transition: height 2s; 
+  transform: translate(50%, -50%);
+}
+
+.graph {
+  display: grid;
+  align-items: center;
+  grid-template-areas:
+  'menbar womenbar';
+  height: 35vh;
+  border-color: white;
+  border-width: 5px;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+}
+
+.graphtitle {
+  place-self: top;
+  height: fit-content;
+}

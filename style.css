@@ -1,0 +1,644 @@
+body {
+  display: block;
+  margin: 10px;
+  overflow-x: hidden;
+  background-color: rgb(20, 20, 20);
+}
+
+body:focus {
+  outline: none;
+}
+
+#Navbar {
+  width: 100vw;
+  top: 0cm;
+  left: 0ch;
+  background-color: black;
+  color: aliceblue;
+  padding: 0px;
+  font-family: "Heebo", sans-serif;
+  font-weight: 600;
+  position: fixed;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  height: 115px;
+}
+
+.links {
+  float:  left;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 13%;
+  text-align: center;
+  transition: transform .2s;
+}
+
+.partition {
+  float:  left;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 1%;
+  text-align: center;
+}
+
+.hover:hover {
+  color: gold;
+  text-decoration: none;
+  transform: scale(1.2); 
+}
+
+.footer {
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  position: fixed;
+  font-size: 17px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  box-shadow: 0 -12px 12px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 7.7%;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color:#000000;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 100px;
+  border-color: gold;
+  border-width: 5px;
+  box-shadow: -6px -6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform .2s;
+}
+
+#myBtn:hover {
+  color: gold;
+  transform: scale(1.2); 
+}
+
+.cpage {
+  color: rgb(109, 109, 109);
+}
+
+#logo {
+  width: 85px;
+  height: 95px;
+  border-radius: 100%;
+}
+
+.center {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.img-banner {
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  z-index: -2;
+  margin: 0%;
+  padding: 0%;
+}
+
+.main-banner {
+  display: grid;
+  margin-top: 115px;
+  width: 100%;
+  height: 40%;
+  place-items: center center;
+  position: relative;
+}
+
+#mainheading {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  transition: transform .2s, color .2s;
+  z-index: 0;
+  position: relative;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px gold;
+}
+
+#mainheading:hover {
+  transform: scale(1.2);
+  color: gold;
+}
+
+.firework {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: explode 1.5s ease-out forwards;
+}
+
+@keyframes explode {
+  0% {
+      opacity: 1;
+      transform: scale(0);
+  }
+
+  100% {
+      opacity: 0;
+      transform: scale(1.5);
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 4%;
+  padding-top: 8%;
+}
+
+.text-holder {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  background-position: center;
+  z-index: 1; 
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wide {
+  grid-column: 1 / 2;
+}
+
+.portrait {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+.image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform .2s;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.text-holder p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text-holder:hover {
+  z-index: 2;
+  box-shadow: 0 0 10px gold;
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 300px; 
+  color: #ffffff;
+  background-color: rgb(16 16 16);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 5%; 
+}
+
+.banner button {
+  margin-top: 1rem;
+}
+
+.image-container {
+  width: 40%; 
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.text-container {
+  width: 60%; 
+  padding: 20px;
+  padding-left: 60px;
+}
+
+.text-container button {
+  background-color:#000000;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: -6px -6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform .2s;
+}
+
+.text-container button:hover {
+  color: gold;
+  transform: scale(1.2); 
+}
+  
+.video-thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  margin-bottom: 3%;
+}
+
+.video-redirect {
+  margin-bottom: 1%;
+  margin-top: 40px;
+  width: 100%;
+  margin: 1%;
+}
+
+.thumbnail {
+  position: relative;
+  width: 28vw;
+  height: fit-content;
+  cursor: pointer;
+  overflow: hidden; 
+  border-radius: 5%;
+  display: inline-block;
+}
+
+.thumbnail img {
+  border-radius: 15px;
+  transition: border-radius 0.3s ease-in-out;
+  display: grid;
+  place-items: center;
+  width: 28vw;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.thumbnail:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.play-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  z-index: 1;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+.title-thumbnail{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  color: #ffffff;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 10px;
+}
+
+:root {
+  --primary-color: mediumslateblue;
+}
+
+h1, h2, h3, p {
+  margin: 0rem;
+}
+
+.contentcard {
+  position: relative;
+  background-color: rgb(16 16 16);
+  border: 1px solid rgb(255 255 255 / 5%);
+  border-radius: 1.5rem;
+  padding: 1rem;
+}
+
+.contentcard:after {  
+  content: "";
+  height: 70px;
+  width: 1px;  
+  position: absolute;  
+  left: -1px;
+  top: 65%;
+  transition: top, opacity;
+  transition-duration: 600ms;
+  transition-timing-function: ease;
+  background: linear-gradient(
+    transparent,
+    var(--primary-color),
+    transparent
+  );
+  opacity: 0;
+}
+
+.contentcard:after {  
+  top: 65%;
+  opacity: 0;
+}
+
+.contentcard:hover:after {
+  top: 25%;
+  opacity: 1;
+}
+
+.card-content {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 1px, 
+    transparent 1px
+  );
+  background-position: 50% 50%;
+  background-size: 1.1rem 1.1rem;
+  padding: 4rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+
+.card-content > :is(h1, h3, p) {
+  text-align: center;
+}
+
+.card-content > h1 {
+  color: rgb(250 249 246); 
+  font-size: 2.6rem;
+}
+
+.card-content > h3 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 0.76rem;
+}
+
+.card-content > p {
+  color: rgb(255 255 255 / 75%);
+  line-height: 1.5rem;
+}
+
+.wide {
+  grid-column: 1 / 2;
+}
+
+.portrait {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 4%;
+  margin: 3rem;
+  margin-top: 10rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+#imagecards {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+.imagecard {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: scale 100ms;
+  display: flex;
+  flex-direction: column;
+  place-items: center;    
+}
+
+.imagecard p {
+  color: #fff;
+  font-size: xx-large;
+  font-family: monospace;
+  font-weight: bolder;
+  z-index: 10;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.imagecard .card-front-image {
+  position: relative;
+  z-index: 2;
+}
+
+.imagecard .card-image {
+  width: clamp(300px, 20vw, 500px);
+  aspect-ratio: 2 / 3;
+  border-radius: clamp(0.5rem, 0.75vw, 2rem);
+}
+
+.card-faders {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 1500ms;
+  pointer-events: none;
+}
+
+.imagecard:hover .card-faders {
+  opacity: 1;
+}
+
+.centercard .card-faders {
+  opacity: 1;
+}
+
+.imagecard:active {
+  scale: 0.98;
+}
+
+.card-fader {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.card-fader:nth-child(odd) {
+  animation: fade-left 3s linear infinite;
+}
+
+.card-fader:nth-child(even) {
+  animation: fade-right 3s linear infinite;
+}
+
+.card-fader:is(:nth-child(3), :nth-child(4)) {
+  animation-delay: 750ms;
+}
+
+.card-fader:is(:nth-child(5), :nth-child(6)) {
+  animation-delay: 1500ms;
+}
+
+.card-fader:is(:nth-child(7), :nth-child(8)) {
+  animation-delay: 2250ms;
+}
+
+@keyframes fade-left {
+  from {
+    scale: 1;
+    translate: 0%;
+    opacity: 1;
+  }
+  
+  to {
+    scale: 0.8;
+    translate: -30%;
+    opacity: 0;
+  }
+}
+
+@keyframes fade-right {
+  from {
+    scale: 1;
+    translate: 0%;
+    opacity: 1;
+  }
+  
+  to {
+    scale: 0.8;
+    translate: 30%;
+    opacity: 0;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links a {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05);
+  margin: 0 30px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s;
+  background-color: rgb(35, 35, 35);
+}
+
+.social-links a .fab {
+  font-size: 30px;
+  line-height: 80px;
+  position: relative;
+  z-index: 10;
+  transition: color 0.5s;
+}
+
+.social-links a::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -90px;
+  left: 0;
+  background: #000;
+  background: linear-gradient(-45deg, #ed1c94, #ffec17);
+  position: absolute;
+  transition: 0.5s;
+}
+
+.social-links a:hover::after {
+  top: 0;
+}
+
+.social-links a:hover .fab {
+  color: #000000;
+}
+
+.social-links a:hover {
+  transform: translateY(-10px);
+}

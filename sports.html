@@ -1,0 +1,385 @@
+<html>
+    <head>
+        <title>Sports and Events</title>
+        <link rel="icon"href="MainImages/Icon.png"type ="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sports.css">
+    </head>
+    <body>
+      <main>
+        <div class="modalborder" id="modalborder"></div>
+        <div id="cards">
+          <div class="card" onclick="openModal(basketball)">
+            <div class="card-content">
+              <div class="card-image">
+                <span class="material-symbols-outlined">
+                  sports_basketball
+                </span>
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <span class="material-symbols-outlined">
+                    sports_basketball
+                  </span>
+                  <div class="card-info-title">
+                    <h3>Basketball</h3>  
+                    <h4>Game of Hoops</h4>
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal" id="basketball">
+            <div class="content">
+              <div class="modal-header">
+                <div class="title">Basketball</div>
+              </div>
+              <div class="modal-body">
+                <p>In basketball, players compete in teams of five, attempting to score points by shooting a ball through a hoop mounted on a backboard. <br>The game is played on a rectangular court, with players dribbling the ball, passing it to teammates, and shooting from various distances.<br>Strategies, teamwork, and individual skill are all crucial factors in determining the outcome of a basketball game.. <br>The team that won in basketball for the 2024 olympics was the United States of America.</p>
+              </div>
+            </div>
+            <div class="modal-image">
+              <button onclick="closeModal(basketball)" class="close-button">&times;</button>
+              <img src="Sports/Sport/Basketball.jpg" class="modal-Image">
+            </div>
+          </div>
+          <div class="card" onclick="openModal(golf)">
+            <div class="card-content">
+              <div class="card-image">
+                <span class="material-symbols-outlined">
+                  golf_course
+                </span>
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <span class="material-symbols-outlined">
+                    golf_course
+                  </span>
+                  <div class="card-info-title">
+                    <h3>Golf</h3>  
+                    <h4>Golf is all about getting a Hole-in-One</h4>
+                  </div>    
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="golf">
+            <div class="content">
+              <div class="modal-header">
+                <div class="title">Golf</div>
+              </div>
+              <div class="modal-body">
+                <p>Golf is a precision sport played on a course with 18 holes. <br>Players use various clubs to hit a small ball into each hole, aiming to complete the course in the fewest possible strokes. <br>The course is often designed with obstacles like bunkers, water hazards, and rough terrain, which can make it challenging to navigate. Golf requires a combination of skill, strategy, and mental focus.<br>Scottie Scheffler from USA won the Men's Individual tournament and Lydia Ko from New Zealand won Women's Individual tournament in the olympics.</p>
+              </div>
+            </div>
+            <div class="modal-image">
+              <button onclick="closeModal(golf)" class="close-button">&times;</button>
+              <img src="Sports/Sport/Golf.jpg" class="modal-Image">
+            </div>
+          </div>
+          <div class="card" onclick="openModal(swimming)">
+            <div class="card-content">
+              <div class="card-image">
+                <span class="material-symbols-outlined">
+                  pool
+                </span>
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <span class="material-symbols-outlined">
+                    pool
+                  </span>
+                  <div class="card-info-title">
+                    <h3>Swimming</h3>  
+                    <h4>Swimming is racing in the water</h4>
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="swimming">
+            <div class="content">
+              <div class="modal-header">
+                <div class="title">Swimming</div>
+              </div>
+              <div class="modal-body">
+                <p>Swimming is an aquatic sport involving various strokes, including freestyle, backstroke, breaststroke, and butterfly.<br> Competitors race against each other in pools of varying lengths, with the goal of reaching the finish line first.<br> Swimming is a demanding sport that requires strength, endurance, and technique.<br>Caeleb Dressel from USA won Men's final and Katie Ledecky from USA won Women's final in the olympics.</p>
+              </div>
+            </div>
+            <div class="modal-image">
+              <button onclick="closeModal(swimming)" class="close-button">&times;</button>
+              <img src="Sports/Sport/Swimming.jpg" class="modal-Image">
+            </div>
+          </div>
+
+          <div class="card" onclick="openModal(boxing)">
+            <div class="card-content">
+              <div class="card-image">
+                <span class="material-symbols-outlined">
+                  sports_mma
+                </span>
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <span class="material-symbols-outlined">
+                    sports_mma
+                  </span>
+                  <div class="card-info-title">
+                    <h3>Boxing</h3>  
+                    <h4>Boxing is in a ring, where fighters landing hits to get points</h4>
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="boxing">
+            <div class="content">
+              <div class="modal-header">
+                <div class="title">Boxing</div>
+              </div>
+              <div class="modal-body">
+                <p>Boxing is a combat sport where two opponents face each other in a ring, aiming to win points by landing punches or knocking out their opponent. The rules of boxing are designed to ensure safety while allowing for competitive action. Fighters use a variety of punches, including jabs, crosses, hooks, and uppercuts, to score points and gain an advantage.</p>
+              </div>
+            </div>
+            <div class="modal-image">
+              <button onclick="closeModal(boxing)" class="close-button">&times;</button>
+              <img src="Sports/Sport/Boxing.jpg" class="modal-Image">
+            </div>
+          </div>
+
+          <div class="card" onclick="openModal(weightlifting)">
+            <div class="card-content">
+              <div class="card-image">
+                <span class="material-symbols-outlined">
+                  fitness_center
+                </span>
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <span class="material-symbols-outlined">
+                    fitness_center
+                  </span>
+                  <div class="card-info-title">
+                    <h3>Weight Lifting</h3>  
+                    <h4>To see who can lift the heaviest weight</h4>
+                  </div>    
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="weightlifting">
+            <div class="content">
+              <div class="modal-header">
+                <div class="title">Weight Lifting</div>
+              </div>
+              <div class="modal-body">
+                <p>Weightlifting is a sport that involves lifting heavy weights, often in the form of dumbbells or barbells. There are two main categories of weightlifting: Olympic weightlifting and powerlifting. Olympic weightlifting consists of two lifts: the snatch and the clean and jerk. Powerlifting involves three lifts: the squat, bench press, and deadlift. Weightlifting requires strength, power, and technique. </p>
+              </div>
+            </div>
+            <div class="modal-image">
+              <button onclick="closeModal(weightlifting)" class="close-button">&times;</button>
+              <img src="Sports/Sport/Weightlifting.jpg" class="modal-Image">
+            </div>
+          </div>
+
+          <div class="card" onclick="openModal(tennis)">
+            <div class="card-content">
+              <div class="card-image">
+                <span class="material-symbols-outlined">
+                  sports_tennis
+                </span>
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <span class="material-symbols-outlined">
+                    sports_tennis
+                  </span>
+                  <div class="card-info-title">
+                    <h3>Tennis</h3>  
+                    <h4>Using rackets to hit balls and give rebounds to the opponent<h4>
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal" id="tennis">
+            <div class="content">
+              <div class="modal-header">
+                <div class="title">Tennis</div>
+                </div>
+                <div class="modal-body">
+                  <p>Tennis is a racket sport played between two opponents or two pairs of opponents on a rectangular court separated by a net. <br>Players use rackets to hit a ball back and forth over the net. <br>The goal is to score points by forcing the opponent to miss a return. <br>Tennis requires skill, agility, and stamina.<br>Carlos Alcaraz from Spain won Men's Singles and Iga Swiatek from Poland won Women's Singles in the olympics.</p>
+                </div>
+            </div>
+            <div class="modal-image">
+              <button onclick="closeModal(tennis)" class="close-button">&times;</button>
+              <img src="Sports/Sport/Tennis.jpg" class="modal-Image">
+            </div>
+          </div>
+
+          <div class="card" onclick="openModal(surfing)">
+            <div class="card-content">
+              <div class="card-image">
+                <span class="material-symbols-outlined">
+                  surfing
+                </span>
+                </div>
+                <div class="card-info-wrapper">
+                  <div class="card-info">
+                    <span class="material-symbols-outlined">
+                      surfing
+                    </span>
+                    <div class="card-info-title">
+                      <h3>Surfing</h3>  
+                      <h4>Surfing the highest waves</h4>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal" id="surfing">
+              <div class="content">
+                <div class="modal-header">
+                  <div class="title">Surfing</div>
+                </div>
+                <div class="modal-body">
+                  <p>Surfing is a water sport that involves riding waves on a surfboard. Surfers paddle out into the ocean and wait for waves to approach. <br>When a suitable wave arrives, they stand up on the board and ride the wave to shore. <br>Surfing requires balance, coordination, and knowledge of ocean conditions.<br>Italo Ferreira from Brazil won in Men's final and Carissa Moore from USA won in Women's final in the olympics.</p>
+                </div>
+              </div>
+              <div class="modal-image">
+                  <button onclick="closeModal(surfing)" class="close-button">&times;</button>
+                  <img src="Sports/Sport/Surfing.jpg" class="modal-Image">
+              </div>
+            </div>
+
+            <div class="card" onclick="openModal(rowing)">
+              <div class="card-content">
+                <div class="card-image">
+                  <span class="material-symbols-outlined">
+                    rowing
+                  </span>
+                </div>
+                <div class="card-info-wrapper">
+                  <div class="card-info">
+                    <span class="material-symbols-outlined">
+                      rowing
+                    </span>
+                    <div class="card-info-title">
+                      <h3>Rowing</h3>  
+                      <h4>Rowing is competitive paddling</h4>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal" id="rowing">
+              <div class="content">
+                <div class="modal-header">
+                  <div class="title">Rowing</div>
+                </div>
+                <div class="modal-body">
+                  <p>Rowing is a team sport where athletes use oars to propel a boat through water. <br>Teams typically consist of five or six rowers, who sit in a row facing backward.<br> The goal is to complete the race course in the fastest time, often competing against other teams. Rowing requires strength, endurance, and coordination.</p>
+                </div>
+              </div>
+              <div class="modal-image">
+                <button onclick="closeModal(rowing)" class="close-button">&times;</button>
+                <img src="Sports/Sport/Rowing.jpg" class="modal-Image">
+              </div>
+            </div>
+
+            <div class="card" onclick="openModal(volleyball)">
+              <div class="card-content">
+                <div class="card-image">
+                  <span class="material-symbols-outlined">
+                    sports_volleyball
+                  </span>
+                </div>
+                <div class="card-info-wrapper">
+                  <div class="card-info">
+                    <span class="material-symbols-outlined">
+                      sports_volleyball
+                    </span>
+                    <div class="card-info-title">
+                      <h3>Volleyball</h3>  
+                      <h4>Volleyball requires skilled jumping and passing</h4>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal" id="volleyball">
+              <div class="content">
+                <div class="modal-header">
+                  <div class="title">Volleyball</div>
+                </div>
+              <div class="modal-body">
+                <p>Volleyball is a team sport played on a rectangular court separated by a net. Players use their hands to hit a ball back and forth over the net. <br>The goal is to score points by forcing the opposing team to miss a return. <br>Volleyball requires skill, agility, and teamwork.<br>In the olympics, in the mens bracmet Poland won and from the womens bracket Serbia won and took the title as the winner.</p>
+              </div>
+            </div>
+            <div class="modal-image">
+              <button onclick="closeModal(volleyball)" class="close-button">&times;</button>
+              <img src="Sports/Sport/Volleyball.jpg" class="modal-Image">
+            </div>
+          </div>
+        </div>
+      </main>
+      <nav class="nav">
+        <div id="nav-links">
+          <a class="nav-link" href="https://olympics.com/en/paris-2024/sports/golf" target="_blank">
+            <h2 class="nav-link-label rubik-font">Golf</h2>
+            <img class="nav-link-image" src="Sports/Redirect/Image Redirect-Golf.webp" />
+          </a>
+          <a class="nav-link" href="https://olympics.com/en/paris-2024/sports/swimming" target="_blank">
+            <h2 class="nav-link-label rubik-font">Swimming</h2>
+            <img class="nav-link-image" src="Sports/Redirect/Image Redirect-Swimming.jpg" />
+          </a>
+          <a class="nav-link" href="https://olympics.com/en/paris-2024/sports/basketball" target="_blank">
+            <h2 class="nav-link-label rubik-font">Basketball</h2>
+            <img class="nav-link-image" src="Sports/Redirect/Image Redirect-Basketball.webp" />
+          </a>
+          <a class="nav-link" href="https://olympics.com/en/paris-2024/sports/tennis" target="_blank">
+            <h2 class="nav-link-label rubik-font">Tennis</h2>
+            <img class="nav-link-image" src="Sports/Redirect/Image Redirect-Tennis.webp" />
+          </a>
+        </div>
+      </nav>
+
+      <button id="nav-toggle" type="button" onclick="toggleNav()">
+        <span class="material-symbols-outlined open">expand_all</span>
+        <span class="material-symbols-outlined close">Close</span>
+      </button>
+
+      <div id="Navbar">      
+          <nav>
+              <a class="links" href="index.html"><img id=logo src="MainImages/Logo.png"> </a> 
+              <div class="center">
+              <a class="links hover" href="index.html">Home</a> 
+              <a class="Partition"><font size="5">|</a> 
+              <a class="links hover" href="about.html">About</a> 
+              <a class="Partition"><font size="5">|</a> 
+              <a class="links hover" href="athletes.html">Athletes</a> 
+              <a class="Partition"><font size="5">|</a> 
+              <a class="links hover" href="medal.html">Medal Tracker</a> 
+              <a class="Partition"><font size="5">|</a> 
+              <a class="links cpage" href="sports.html">Sports & Events</a>
+              </div>
+          </nav>
+      </div>
+      
+      <script src="popup.js">
+      </script>
+</body>
+</html
